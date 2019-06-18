@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/css/MasterPageStyle.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- ==BEGIN navigate manu ==-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--BEGIN hamburger manu -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--END hamburger manu -->
+                <a class="navbar-brand">
+                    <img class="Logo-Image" src="assets/images/LogoBlack.PNG" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li id="inventoryManagement"><a href="inventoryManagement.aspx">ניהול מלאי</a></li>
+                    <li id="showSales"><a href="showSales.aspx">הצגת מכירות</a></li>
+                    <li id="addProduct"><a href="addProduct.aspx">הוספת מוצר </a></li>
+                    <li id="addCategory"><a href="addCategory.aspx">הוספת קטגוריה</a></li>
+                    <li id="login" class="signOut"><a runat="server" onserverclick="deleteSession">התנתקות</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ==END navigate manu== -->
+    <div class="Logo-Title-Holder">
+        <img src="assets/images/LogoBlack.PNG" />
+    </div>
+    <!-- ==BEGIN content== -->
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- ==END content== -->
+    <!-- ==BEGIN footer== -->
+    <div class="footer">
+        <span>Designed and created by Rotem Mano, Gal lerenfeld and Matan Diner</span>
+    </div>
+    <!-- ==END footer== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
