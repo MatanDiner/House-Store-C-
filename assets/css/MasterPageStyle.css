@@ -1,0 +1,110 @@
+﻿     span.title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .jumbotron {
+            text-align: center;
+            height: 350px;
+            padding-top: 0 ;
+            padding-bottom: 0;
+            border-radius: 5px;
+            background-color: white ;
+        }
+
+        img {
+            max-width: 306px;
+            max-height: 180px;
+        }
+
+        span.content {
+            font-size: initial;
+        }
+
+        img.Logo-Image {
+            height: 100%;
+        }
+
+        a.navbar-brand {
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .Logo-Title-Holder {
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        .footer {
+            bottom: 0;
+            padding:5px;
+            background-color: rgba(16, 16, 16, 0.59);
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            left: 0;
+            position: fixed;
+        }
+
+        input#ContentPlaceHolder1_submitBTN {
+            width: 100%;
+        }
+
+        span#ContentPlaceHolder1_ChosenProductsLBL {
+            color: white;
+        }
+
+        .formClass {
+            text-align: center;
+            background-color:white;
+
+        }
+        .createProductTable {
+        margin: 0 auto;
+        }
+
+        .createProductTable td {
+            text-align: left;
+        }
+        .PaymentForm{
+        background-color:white;
+        padding-left:10px;
+        padding-right:10px;
+
+        }
+
+        .SubmitButtonHolder {
+        text-align:left;
+        }
+        input#ContentPlaceHolder1_SubmitButton {
+        width:100%;
+        }
+
+        input#ContentPlaceHolder1_Submit {
+        width:100%;
+        }
+        .Headers {
+        background-color:white;
+        text-align:center;
+        margin:0;
+        }
+
+        #form1 {
+        padding-bottom:50px;
+        }
+                .signOut{
+            position:absolute  !important;
+            right:0;
+        }
